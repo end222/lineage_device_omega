@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cm_nikel.mk
+    $(LOCAL_DIR)/cm_omega.mk

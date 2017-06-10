@@ -1,7 +1,7 @@
 # mt6797 platform boardconfig
-LOCAL_PATH := device/xiaomi/nikel
+LOCAL_PATH := device/xiaomi/omega
 
-include device/xiaomi/nikel/board.mk
+include device/xiaomi/omega/board.mk
 
 # Platform
 ARCH_ARM_HAVE_TLS_REGISTER := true
@@ -46,10 +46,10 @@ BOARD_MKBOOTIMG_ARGS := \
 	--ramdisk_offset 0x04f88000 \
 	--second_offset 0x00000000 \
 	--tags_offset 0x03f88000 \
-	--board nikel
+	--board omega
 
 # Hack for building without kernel sources
-ifeq ($(TARGET_DEVICE),nikel)
+ifeq ($(TARGET_DEVICE),omega)
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 endif
 

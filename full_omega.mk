@@ -4,17 +4,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/xiaomi/nikel/device.mk)
+$(call inherit-product, device/xiaomi/omega/device.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := nikel
+PRODUCT_RELEASE_NAME := omega
 
 EXTENDED_FONT_FOOTPRINT := true
 
-PRODUCT_DEVICE := nikel
-PRODUCT_NAME := full_nikel
+PRODUCT_DEVICE := omega
+PRODUCT_NAME := full_omega
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 4
+PRODUCT_MODEL := Redmi Pro
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
