@@ -32,8 +32,7 @@
    * Done :)
    
    # Known Issue:-
-   * FP Scanner
-   * Camera
+   * To be determined :P
    
    # Credits:-
    * AdrianoMartins
