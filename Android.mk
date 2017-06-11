@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),nikel)
+ifeq ($(TARGET_DEVICE),omega)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
