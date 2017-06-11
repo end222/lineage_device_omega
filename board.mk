@@ -6,7 +6,7 @@ USE_OPENGL_RENDERER := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
-BOARD_EGL_CFG := device/xiaomi/nikel/configs/etc/egl.cfg
+BOARD_EGL_CFG := device/xiaomi/omega/configs/etc/egl.cfg
 
 # Boot animation
 TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
