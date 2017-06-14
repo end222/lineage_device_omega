@@ -22,8 +22,8 @@
    # Build
    * repo init -u git://github.com/LineageOS/android.git -b master
    * repo sync
-   * git clone https://github.com/end222/lineage_device_omega.git -b master device/xiaomi/nikel
-   * git clone https://github.com/end222/lineage_vendor_omega.git -b master vendor/xiaomi/nikel
+   * git clone https://github.com/end222/lineage_device_omega.git -b master device/xiaomi/omega
+   * git clone https://github.com/end222/lineage_vendor_omega.git -b master vendor/xiaomi/omega
    * cd device/xiaomi/omega/patches
    * . apply.sh
    * source build/envsetup.sh
@@ -32,12 +32,18 @@
    * Done :)
    
    # Known Issue:-
-   * To be determined :P
+   * Camera
+   * Flash
+   * Data and calls
+   * Sometimes audio
+   * FP sensor
    
    # Credits:-
    * AdrianoMartins
    * divis1969
    * xen0n
    * SamarV-121
+   * Diedmaster
+   * xtreme97
    * Me :D (end222)
 
