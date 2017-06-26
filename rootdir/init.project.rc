@@ -1,0 +1,98 @@
+# MTK project .rc configure
+
+on post-fs-data
+
+#Camera
+    chmod 0660 /dev/MAINAF
+    chown system camera /dev/MAINAF
+
+    chmod 0660 /dev/MAINAF2
+    chown system camera /dev/MAINAF2
+
+    chmod 0660 /dev/SUBAF
+    chown system camera /dev/SUBAF
+
+    chmod 0660 /dev/GAF001AF
+    chown system camera /dev/GAF001AF
+
+    chmod 0660 /dev/DW9714AF
+    chown system camera /dev/DW9714AF
+
+    chmod 0660 /dev/LC898212AF
+    chown system camera /dev/LC898212AF
+
+    chmod 0660 /dev/BU64745GWZAF
+    chown system camera /dev/BU64745GWZAF
+
+#SMB
+    chown system system /proc/smb/ScreenComm
+    chmod 0660 /proc/smb/ScreenComm
+
+# BT
+#    chmod 0660 /dev/stpbt
+#    chown bluetooth radio /dev/stpbt
+
+# GPS
+#    chown gps gps /dev/stpgps
+    chown gps gps /sys/class/gpsdrv/gps/pwrctl
+    chown gps gps /sys/class/gpsdrv/gps/suspend
+    chown gps gps /sys/class/gpsdrv/gps/state
+    chown gps gps /sys/class/gpsdrv/gps/pwrsave
+    chown gps gps /sys/class/gpsdrv/gps/status
+#    chmod 0660 /dev/stpgps
+
+#Disable for one Single loader
+# Load WiFi Driver
+#   insmod /system/lib/modules/wlan_mt.ko
+
+# Char device for BT 3.0 HS
+    mknod /dev/ampc0 c 151 0
+    chown bluetooth bluetooth /dev/ampc0
+    chmod 0660 /dev/ampc0
+
+#LCSH ADD by dingyin for smartpa 20160126
+chmod 0660 /etc/firmware/tfa98xx.cnt
+chmod 0660 /dev/smartpa_i2c
+chown system system /dev/smartpa_i2c
+chown system system /etc/firmware/tfa98xx.cnt
+
+
+#LCSH zhaoyang for read premission to dev/otp 20161110
+    chmod 0664 /dev/otp
+
+#start akm09911 daemon
+start akmd09911 -p 0
+
+#start st480 daemon
+#start st480 -p 0
+
+# LCSH ADD by dingyin  for leadcore fp start
+        chmod 0660 /dev/fpsensor
+        chown system system /dev/fpsensor
+    mkdir /data/fpsensor
+    chown system system /data/fpsensor
+    chown system system /data/fpsensor/socket
+    chmod 0760  /data/fpsensor
+    chmod 0660  /data/fpsensor/socket
+# LCSH ADD by dingyin  for leadcore fp end
+chown system system /system/bin/akmd09911
+
+chmod 0755 /system/bin/akmd09911
+
+
+chown system system /system/bin/st480
+
+#chmod 0755 /system/bin/st480
+
+#LCSH ADD by yangbo for fpc fingerprint 20160229,start
+chown system system sys/bus/platform/devices/soc/soc:fpc_interrupt@0/irq
+chown system system sys/bus/platform/devices/soc/soc:fpc_interrupt@0/clk_enable
+chown system system sys/bus/platform/devices/soc/soc:fpc_interrupt@0/do_wakeup
+chown system system sys/bus/platform/devices/soc/soc:fpc_interrupt@0/wakeup_enable
+mkdir /data/fpc
+chown system system /data/fpc
+chown system system /data/fpc/socket
+chmod 0770  /data/fpc
+chmod 0770  /data/fpc/socket
+#mkdir /data/fpc 0664 system system
+#LCSH ADD end for fpc fingerprint,end
