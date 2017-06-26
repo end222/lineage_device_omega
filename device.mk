@@ -27,6 +27,10 @@ PRODUCT_COPY_FILES := \
 PRODUCT_PACKAGES += \
     lights.mt6797
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    fingerprintd
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_device.xml:system/etc/audio_device.xml \
