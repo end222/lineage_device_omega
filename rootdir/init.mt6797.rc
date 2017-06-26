@@ -1,3 +1,4 @@
+import init.project.rc
 import init.mt6797.usb.rc
 import init.modem.rc
 
