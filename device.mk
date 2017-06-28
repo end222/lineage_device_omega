@@ -91,6 +91,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# Fingerprint Sensor
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.fingerprint=fpc \
+    persist.qfp=false
+
 # Dalvik/HWUI
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 
