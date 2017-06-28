@@ -1,6 +1,11 @@
 # Common overlays
 DEVICE_PACKAGE_OVERLAYS += device/xiaomi/omega/overlay
 
+# Missing libMcClient
+
+PRODUCT_PACKAGES += \
+    libMcClient
+
 # Display
 PRODUCT_PACKAGES += \
     libion
@@ -40,6 +45,10 @@ PRODUCT_PACKAGES += \
     fsck.ntfs \
     mkfs.ntfs \
     mount.ntfs
+
+# Torch
+PRODUCT_PACKAGES += \
+    Torch
 
 # USB
 PRODUCT_PACKAGES += \
