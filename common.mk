@@ -1,15 +1,6 @@
 # Common overlays
 DEVICE_PACKAGE_OVERLAYS += device/xiaomi/omega/overlay
 
-# Missing libMcClient
-
-PRODUCT_PACKAGES += \
-    libMcClient
-
-# FP sensor (fpc)
-PRODUCT_PACKAGES += \
-    lib_fpc_tac_shared
-
 # Display
 PRODUCT_PACKAGES += \
     libion
