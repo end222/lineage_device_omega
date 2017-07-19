@@ -4,7 +4,7 @@
 
 | Feature                 | Specification                     |
 | :---------------------- | :-------------------------------- |
-| CPU                     | Deca-core 2.1/2.5 GHz             |
+| CPU                     | Deca-core 2.3/2.5 GHz             |
 | Chipset                 | Mediatek MT6797 Helio X20/X25     |
 | GPU                     | Mali-T880 MP4                     |
 | Memory                  | 3/4 GB                            |
