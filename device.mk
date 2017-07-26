@@ -88,19 +88,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += ro.debuggable=1
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0
 
-# Camera
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.stagefright.legacyencoder=true \
-    media.stagefright.less-secure=true
-
-PRODUCT_PACKAGES += \
-    fs_config_files
-
 # Fingerprint Sensor
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.fingerprint=fpc \
-    persist.qfp=false
+    ro.hardware.fingerprint=fpc
 
 # Dalvik/HWUI
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
