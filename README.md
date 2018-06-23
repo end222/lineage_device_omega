@@ -27,7 +27,6 @@
    * cd device/xiaomi/omega/patches
    * . apply.sh
    * source build/envsetup.sh
-   * breakfast omega
    * brunch omega
    * Done :)
    
